@@ -1,0 +1,44 @@
+
+
+.header {
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-item a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.user-info {
+  font-weight: bold;
+}
+
+body {
+  padding-top: 60px; 
+}
