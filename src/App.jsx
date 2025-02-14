@@ -13,6 +13,7 @@ import Ex2 from './Component/EX2'
 import ColorBox from './Component/ColorBox'
 import Notes from './Component/Notes'
 import TodoList from './Component/TodoList'
+import Events from './Component/Events'
 function App() {
   const [count, setCount] = useState(0);
     const [step, setStep] = useState(1);
@@ -22,33 +23,8 @@ function App() {
   return (
     <>
  
-    <Header name={name} />
-  
-
     
-    <CounterC counter={10} />
-            <br />
-            <input
-                type="number"
-                value={step}
-                onChange={(e) => setStep(e.target.value)}
-            />
-            <br />
-            <CounterF step={step} />
-            <br />
-            <br />
-            <Ex2 initialItems={["React", "Angular", "Vue"]} />
-            <br />
-            <br />
-
-            <ColorBox/>
-            <br />
-            <Notes/>
-            <br />
-            <TodoList/>
-            <br/>
-            <br />
-            <Pokemon />
+    <Events/>
     </>
   )
 }
