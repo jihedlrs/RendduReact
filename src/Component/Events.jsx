@@ -3,6 +3,7 @@ import Event from "./Event";
 import data from "../data/events.json";
 import { Container, Row } from "react-bootstrap";
 import { Alert } from 'react-bootstrap';
+import Navbarr from './Navbarr'
 
 
 
@@ -38,7 +39,9 @@ function Events(){
         ));
     };
     return (
+        
         <Container>
+               <Navbarr/>
                     {showMessage && (
             <Alert variant="success">Bienvenue sur la page des événements !</Alert>
         )}
